@@ -23,3 +23,32 @@ Os dados sao salvos em memoria e nao em banco de dados ou arquivos exernos.
 
 ## Estrutura do Projeto
 ![Diagrama de estrutura](docs/estrutura.svg)
+
+
+## Futuras atualizacoes
+
+Este projeto ainda é simples, mas há planos para evoluir:
+
+**Integração com Spring Boot**
+- transformar o CRUD em uma aplicação backend estruturada, com endpoints REST para manipulação de pessoas.
+
+**Integração ao PostgreSQL**
+- Substituir o armazenamento em memória por um banco de dados relacional, garantindo persistência real dos dados.
+
+**Containerização com Docker**
+- Criar uma imagem Docker para facilitar a execução e distribuição do sistema em qualquer ambiente.
+
+**Disponibilização como API**
+- Expor os recursos via API REST, permitindo que outras aplicações consumam os dados de forma simples.
+
+**Testes automatizados**
+- Adicionar testes unitários e de integração para garantir qualidade e confiabilidade.
+
+**Deploy futuro**
+- Possibilidade de subir a aplicação em serviços de nuvem para acesso público.
+
+## Autor
+- Nome: Victor Policarpo
+- LinkedIn: [linkedin.com/in/victor-policarpo-dev/](https://www.linkedin.com/in/victor-policarpo-dev/)
+- GitHub: [github.com/Victor-Policarpo](https://github.com/Victor-Policarpo)
+- Portifolio: [tsukii.pages.dev/](https://tsukii.pages.dev/)
