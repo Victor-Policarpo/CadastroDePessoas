@@ -15,19 +15,24 @@ public class Gerenciador implements GerenciadorInterface {
     }
     @Override
     public void listar(){
-        if (!listaPessoas.isEmpty()){
-            System.out.println("Lista: ");
-            for(int i = 0; i<listaPessoas.size(); i++){
-                System.out.printf("Id: %s | Nome: %s\n", i, listaPessoas.get(i).getNome());
-            }
-        } else {
+        if (listaPessoas.isEmpty()){
             System.out.println("A lista de pessoas cadastrada esta vazia.");
-        }
+            return;
+            }
+        System.out.println("Lista: ");
+        for(int i = 0; i<listaPessoas.size(); i++) {
+            System.out.printf("Id: %s | Nome: %s\n", i, listaPessoas.get(i).getNome());
 
 
-    }
+        }}
+
     @Override
     public void remover(int indice){
+        if (listaPessoas.isEmpty()){
+            System.out.println("A lista de pessoas cadastradas esta vazia.");
+            return;
+        }
+
         if (indice <= listaPessoas.size() && indice >= 0){
             System.out.printf("Removendo %s\n", listaPessoas.get(indice).getNome());
             listaPessoas.remove(indice);
@@ -37,6 +42,10 @@ public class Gerenciador implements GerenciadorInterface {
     }
     @Override
     public void atualizar(int indice, Scanner input){
+        if (listaPessoas.isEmpty()){
+            System.out.println("A lista de pessoas cadastradas esta vazia.");
+            return;
+        }
         System.out.printf("Editando %s\n", listaPessoas.get(indice).getNome());
         boolean continua = true;
         while (continua) {
