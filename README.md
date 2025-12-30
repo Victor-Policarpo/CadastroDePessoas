@@ -22,3 +22,4 @@ Os dados sao salvos em memoria e nao em banco de dados ou arquivos exernos.
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ## Estrutura do Projeto
+![Diagrama de estrutura](docs/estrutura.svg)
